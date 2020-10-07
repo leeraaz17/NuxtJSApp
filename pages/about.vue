@@ -1,6 +1,9 @@
 <template>
-  <main>
-    <h1>This is a about page</h1>
-    <nuxt-link to="/">Home pagee </nuxt-link>
-  </main>
+  <section id="about-page">
+    <main>
+      <h1>Hi, that`s us</h1>
+      <p>I am learning nuxtjs.</p>
+      <nuxt-link to="/">Home pagee </nuxt-link>
+    </main>
+  </section>
 </template>
