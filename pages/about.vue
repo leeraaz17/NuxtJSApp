@@ -1,5 +1,5 @@
 <template>
-  <section id="about-page">
+  <section id="about-page" v-editable="blok">
     <main>
       <h1>{{ title }}</h1>
       <p>{{ content }}</p>
@@ -15,9 +15,16 @@ export default {
     }).then(res => {
       console.log(res)
       return {
+        blok: res.data.story.content,
         title: res.data.story.content.Title,
         content: res.data.story.content.Content
       }
+    })
+  },
+  mounted() {
+    // this.$storybridge.init()
+    this.$storybridge.on('change', () => {
+      location.reload(true);
     })
   }
 }
