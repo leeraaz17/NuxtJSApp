@@ -9,7 +9,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&family=Open+Sans&family=Roboto&display=swap" }
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&family=Open+Sans&family=Roboto&display=swap" },
+      { rel: "stylesheet", href: "https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" }
     ]
   },
 
